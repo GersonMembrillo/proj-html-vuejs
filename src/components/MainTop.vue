@@ -1,21 +1,22 @@
 <template>
-    <div class="top container">
+    <div class="top container my-5">
       <h3 class="text-uppercase text-center fw-bold">Our Services</h3>
-      <h4 class="text-center fw-lighter">We make your child happy day after day</h4>
+      <h4 class="text-center fw-lighter mb-4">We make your child happy day after day</h4>
       <div class="row">
         <div class="col-4">
-          <h4>Chess Education</h4>
-          <h5>Popular education for your child and your</h5>
+          <h5>Chess Education</h5>
+          <h6>Popular education for your child and your</h6>
           <p class="fw-light">Teachers and parents around the world know that chess is not a simple game. It is a great learning tool that will help build your child's executive function skills.</p>
           <ul>
-            <li v-for="index in proList" :key="index"><span class="ps-2">{{ index }}</span></li>
+            <li class="py-1" v-for="index in proList" :key="index"><span class="ps-2">{{ index }}</span></li>
           </ul>
+          <button type="button" class="btn btn-warning">Learn More</button>
         </div>
         <div class="col-8 d-flex justify-content-between flex-wrap">
           <div class="card" v-for="(service,index) in services" :key="index">
               <img :src="service.src" :alt="service.title" class="card-img">
-              <h5 class="card-title">{{ service.title }}</h5>
-              <p class="card-text">{{ service.text }}</p>
+              <p class="card-title fw-bold my-3">{{ service.title }}</p>
+              <p class="card-text fw-light">{{ service.text }}</p>
           </div>
         </div>
       </div>
@@ -30,11 +31,14 @@
       </div>
       <div class="down bg-warning">
         <div class="container d-flex justify-content-between align-items-center">
-          <img src="../assets/images/mt-2236-home-icon5.png" alt="mt-2236-home-icon5.png" class="m-4">
-          <div class="middle-text">
-            <h3 class="text-uppercase">play & learn</h3>
-            <p class="mb-0">Take a look into our day to day life here at Chess School</p>
+          <div class="d-flex">
+            <img src="../assets/images/mt-2236-home-icon5.png" alt="mt-2236-home-icon5.png" class="m-4">
+            <div class="middle-text mx-4">
+              <h3 class="text-uppercase fw-bold">play & learn</h3>
+              <p class="mb-0 fw-light">Take a look into our day to day life here at Chess School</p>
+            </div>
           </div>
+
           <div class="m-4">
             <button type="button" class="btn btn-outline-dark">Learn More</button>
           </div>
@@ -66,8 +70,14 @@ export default {
     list-style-image: url('../assets/images/mt-2236-home-icon-bullet.png');
   }
 
+  .btn {
+        padding: 6px 30px;
+        font-size: 12px;
+      }
+
   .card {
     width: 48%;
+    border: none;
 
     .card-img {
       width: 50px;
@@ -82,20 +92,14 @@ export default {
     }
 
     .middle-text {
-      width: 60%;
+      margin: auto;
     }
 
     .down {
       img {
-      width: 50px;
+      width: 70px;
       height: auto;
     }
-
-      .btn {
-        padding: 5px 30px;
-        font-size: 12px;
-      }
-
     }
   }
 </style>

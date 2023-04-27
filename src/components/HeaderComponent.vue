@@ -21,7 +21,7 @@
   <div class="hero d-flex align-items-center">
     <div class="container text-white">
       <div class="col-5">
-        <span class="badge rounded-pill text-bg-warning text-uppercase mb-3">Welcome</span>
+        <span class="badge rounded-pill text-bg-warning text-uppercase mb-3 fw-normal">Welcome</span>
           <h1 class="text-uppercase fw-bold">Academic Chess for <span class="text-warning fst-italic">everyone</span></h1>
           <p class="text-white">We are dedicate to broadening and developing chess as art, recreation, and as a significant element of culture in Northern California.</p>
           <div class="buttons d-flex">
@@ -65,11 +65,6 @@ export default {
     z-index: 10;
     font-size: 10px;
 
-    button {
-      font-size: 12px;
-      padding: 3px 30px;
-    }
-
     a {
     color: white;
     &:hover {
@@ -77,6 +72,11 @@ export default {
     }
   }
   }
+
+  button {
+      font-size: 12px;
+      padding: 5px 30px;
+    }
 
 
 
