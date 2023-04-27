@@ -1,26 +1,26 @@
 <template>
   <div class="top">
-    <MainTopCard />
+    <MainTop />
   </div>
   <div class="center">
-    <MainCenterCard />
+    <MainCenter />
   </div>
   <div class="bottom">
-    <MainBottomCard />
+    <MainBottom />
   </div>
 </template>
 
 <script>
-import MainTopCard from './MainTopCard.vue';
-import MainCenterCard from './MainCenterCard.vue';
-import MainBottomCard from './MainBottomCard.vue'
+import MainTop from './MainTop.vue';
+import MainCenter from './MainCenter.vue';
+import MainBottom from './MainBottom.vue'
 
 export default {
   name: 'MainComponent',
   components: {
-    MainTopCard,
-    MainCenterCard,
-    MainBottomCard,
+    MainTop,
+    MainCenter,
+    MainBottom,
   }
 }
 </script>
