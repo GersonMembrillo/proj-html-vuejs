@@ -20,7 +20,7 @@
   </div>
   <div class="hero d-flex align-items-center">
     <div class="container text-white">
-      <div class="col-5">
+      <div class="col-4">
         <span class="badge rounded-pill text-bg-warning text-uppercase mb-3 fw-normal">Welcome</span>
           <h1 class="text-uppercase fw-bold">Academic Chess for <span class="text-warning fst-italic">everyone</span></h1>
           <p class="text-white">We are dedicate to broadening and developing chess as art, recreation, and as a significant element of culture in Northern California.</p>
@@ -53,7 +53,7 @@ export default {
     background-image: url('../assets/images/mt-2236-home-bg1.jpg');
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 640px;
     position: relative;
   }
 
@@ -77,9 +77,5 @@ export default {
       font-size: 12px;
       padding: 5px 30px;
     }
-
-
-
-
 
 </style>

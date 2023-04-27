@@ -30,16 +30,15 @@
         </div>
       </div>
       <div class="down bg-warning">
-        <div class="container d-flex justify-content-between align-items-center">
-          <div class="d-flex">
+        <div class="container d-flex align-items-center">
+          <div class="d-flex left">
             <img src="../assets/images/mt-2236-home-icon5.png" alt="mt-2236-home-icon5.png" class="m-4">
-            <div class="middle-text mx-4">
+            <div class="middle-text ms-4">
               <h3 class="text-uppercase fw-bold">play & learn</h3>
               <p class="mb-0 fw-light">Take a look into our day to day life here at Chess School</p>
             </div>
           </div>
-
-          <div class="m-4">
+          <div class="right">
             <button type="button" class="btn btn-outline-dark">Learn More</button>
           </div>
 
@@ -50,15 +49,15 @@
 
 <script>
 import { mainTopList } from '../data/data';
-import { mainTopServiceCards } from '../data/data'
-import { mainTopImages } from '../data/data'
+import { mainTopCards } from '../data/data';
+import { mainTopImages } from '../data/data';
 
 export default {
   name: 'MainTop',
   data() {
     return {
       proList: mainTopList,
-      services: mainTopServiceCards,
+      services: mainTopCards,
       images: mainTopImages,
     }
   }
@@ -69,11 +68,6 @@ export default {
   .top ul{
     list-style-image: url('../assets/images/mt-2236-home-icon-bullet.png');
   }
-
-  .btn {
-        padding: 6px 30px;
-        font-size: 12px;
-      }
 
   .card {
     width: 48%;
@@ -101,5 +95,9 @@ export default {
       height: auto;
     }
     }
+  }
+
+  .left {
+    width: 80%;
   }
 </style>

@@ -42,7 +42,7 @@ const mainTopList = [
 	'Regulate emotions',
 	'Learn to pay attention to details',
 ];
-const mainTopServiceCards = [
+const mainTopCards = [
 	{
 		src: '../../public/images/mt-2236-home-icon1.png',
 		title: 'Various Age Groups',
@@ -70,5 +70,28 @@ const mainTopImages = [
 	'../../public/images/mt-2236-home-gallery3.jpg',
 	'../../public/images/mt-2236-home-gallery4.jpg',
 ];
+const mainCenterCards = [
+	{
+		src: '../../public/images/mt-2236-home-img1.jpg',
+		title: "Garry Kasparo's Masterclass",
+		text: 'Learn the tips, tricks and strategies from one of the best masters',
+		price: '$456',
+		href: '#',
+	},
+	{
+		src: '../../public/images/mt-2236-home-img2.jpg',
+		title: 'Online Chess Lessons for Beginners',
+		text: 'Catered to adult beginners who have a few hours a week to practice',
+		price: '$205',
+		href: '#',
+	},
+	{
+		src: '../../public/images/mt-2236-home-img3.jpg',
+		title: 'International chess School Online',
+		text: 'Chess lessons for children and adults held completely online',
+		price: '$356',
+		href: '#',
+	},
+];
 
-export { headerList, mainTopList, mainTopServiceCards, mainTopImages };
+export { headerList, mainTopList, mainTopCards, mainTopImages, mainCenterCards };
