@@ -8,7 +8,7 @@
           <h6>Popular education for your child and your</h6>
           <p class="fw-light">Teachers and parents around the world know that chess is not a simple game. It is a great learning tool that will help build your child's executive function skills.</p>
           <ul>
-            <li class="py-1" v-for="index in proList" :key="index"><span class="ps-2">{{ index }}</span></li>
+            <li class="py-2" v-for="index in proList" :key="index"><span class="ps-2">{{ index }}</span></li>
           </ul>
           <button type="button" class="btn btn-warning">Learn More</button>
         </div>
