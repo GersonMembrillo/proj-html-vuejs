@@ -1,7 +1,7 @@
 <template>
-  <div class="top container my-5">
+  <div class="top container">
     <h3 class="text-uppercase text-center fw-bold">Courses</h3>
-    <h4 class="text-center fw-lighter mb-4">To keep up with the constantly rising standards of play</h4>
+    <h4 class="text-center fw-lighter my-4">To keep up with the constantly rising standards of play</h4>
     <div class="row d-flex">
       <div class="col-4" v-for="(card, index) in cards" :key="index">
         <div class="card h-100">
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.top {
+  padding-top: 75px;
+}
 
 .card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

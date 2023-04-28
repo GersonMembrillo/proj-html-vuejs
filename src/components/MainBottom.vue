@@ -1,7 +1,7 @@
 <template>
-  <div class="top container pt-5">
+  <div class="top container">
     <h3 class="text-uppercase text-center fw-bold">Our Events</h3>
-    <h4 class="text-center fw-lighter mb-4">Chess is fun and we are happy to prove it at our events!</h4>
+    <h4 class="text-center fw-lighter my-4">Chess is fun and we are happy to prove it at our events!</h4>
     <div class="d-flex align-items-center mb-5" v-for="(card, index) in cards" :key="index">
         <div class="col-4">
           <img :src="card.src" :alt="card.title">
@@ -56,7 +56,7 @@ export default {
   }
 
   .top {
-    padding-bottom: 50px;
+    padding: 75px 0px;
   }
 
   .bottom {

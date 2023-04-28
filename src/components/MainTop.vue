@@ -1,7 +1,7 @@
 <template>
-    <div class="top container my-5">
+    <div class="top container">
       <h3 class="text-uppercase text-center fw-bold">Our Services</h3>
-      <h4 class="text-center fw-lighter mb-4">We make your child happy day after day</h4>
+      <h4 class="text-center fw-lighter my-4">We make your child happy day after day</h4>
       <div class="row">
         <div class="col-4">
           <h5>Chess Education</h5>
@@ -65,9 +65,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .top ul{
+  .top {
+    padding: 75px 0px;
+    ul{
     list-style-image: url('../assets/images/mt-2236-home-icon-bullet.png');
+    }
   }
+
+
 
   .card {
     width: 48%;

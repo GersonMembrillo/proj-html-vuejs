@@ -19,6 +19,9 @@
     </div>
   </div>
   <div class="hero d-flex align-items-center">
+    <div class="call">
+      <a class="ms-2" href=""><i class="fa-solid fa-phone fs-4"></i></a>
+    </div>
     <div class="container text-white">
       <div class="col-4">
         <span class="badge rounded-pill text-bg-warning text-uppercase mb-3 fw-normal">Welcome</span>
@@ -32,6 +35,8 @@
 
     </div>
   </div>
+
+
 </template>
 
 <script>
@@ -73,9 +78,23 @@ export default {
   }
   }
 
-  button {
-      font-size: 12px;
-      padding: 5px 30px;
+  .call {
+    a {
+      color: #ffcd18;
+      background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: color, background-color, border;
+  position: absolute;
     }
+  }
+
+
+
 
 </style>
